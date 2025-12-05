@@ -1,0 +1,35 @@
+.button {
+  // .button__up
+  &__up {
+    position: fixed;
+    bottom: 150px;
+    right: 0;
+    z-index: 10;
+
+    @media (max-width: 768px) {
+      bottom: 50px;
+    }
+
+    // Начальное состояние - скрыта
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(20px);
+
+    //Плавная анимация появление/исчезновение
+    transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.3s ease;
+
+    // Когда кнопка активна
+    &.active {
+      opacity: 1;
+      visibility: visible;
+      transform: translateY(0);
+    }
+  }
+  // .button__up-link
+  &__up-link {
+    img {
+      width: 40px;
+      height: 40px;
+    }
+  }
+}

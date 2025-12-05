@@ -1,0 +1,7 @@
+@import 'normalize', 'fonts', 'mixins', 'media', 'variables', 'utils', 'globals';
+
+@import 'blocks/header', 'blocks/hero', 'blocks/history', 'blocks/direction',
+  'blocks/benefits', 'blocks/goals', 'blocks/news', 'blocks/footer',
+  'blocks/button__up', 'blocks/mobile', 'blocks/news-feed', 'blocks/article',
+  'blocks/disposal-services', 'blocks/disposal-mask', 'blocks/how-we-work',
+  'blocks/our_partners', 'blocks/review', 'blocks/contacts';

@@ -1,0 +1,140 @@
+.menu {
+  // .menu__mobile
+  &__mobile {
+    position: fixed;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    flex-direction: column;
+    background: var(--blue-1);
+    padding: 10px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 11;
+
+    &.active {
+      visibility: visible;
+      opacity: 1;
+    }
+  }
+
+  &__mobile--nav {
+    flex-direction: column;
+    padding: 15px 0px;
+    margin-bottom: 20px;
+  }
+
+  &__mobile--icon {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+    background-color: var(--white);
+    border-radius: 10px;
+    margin-left: auto;
+
+    span {
+      position: absolute;
+      height: 2px;
+      width: 20px;
+      background-color: var(--blue-1);
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%) rotate(45deg);
+
+      &:first-child {
+      }
+      &:last-child {
+        transform: translate(-50%, -50%) rotate(-45deg);
+      }
+    }
+  }
+}
+.logo {
+  // .logo__mobile
+  &__mobile {
+    margin: 0 10px 5px 10px;
+    align-self: end;
+
+    img {
+      width: 85px;
+    }
+  }
+}
+.links {
+  // .links__mobile
+  &__mobile {
+    flex-direction: column;
+    gap: 20px;
+    font-weight: 400;
+    font-size: 18px;
+    color: #797979;
+    background: var(--blue-background);
+    border-radius: 40px 0px 40px 40px;
+    padding: 30px 10px;
+    height: 400px;
+  }
+}
+.flex {
+}
+.messengers {
+  // .messengers__mobile
+  &__mobile {
+    gap: 10px;
+    margin-bottom: 20px;
+    padding: 0 10px;
+  }
+}
+.whatsapp {
+  // .whatsapp__mobile
+  &__mobile {
+    img {
+      width: 40px;
+      height: 40px;
+    }
+  }
+}
+.telegram {
+  // .telegram__mobile
+  &__mobile {
+    img {
+      width: 40px;
+      height: 40px;
+    }
+  }
+}
+.contacts {
+  // .contacts__mobile
+  &__mobile {
+    max-width: 270px;
+    padding: 0 10px;
+  }
+}
+.company {
+  // .company__mobile
+  &__mobile {
+    align-items: flex-start;
+    gap: 10px;
+    margin-bottom: 20px;
+    font-weight: 400;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.8);
+  }
+}
+.text {
+  // .text__mobile
+  &__mobile {
+  }
+}
+.address {
+  // .address__mobile
+  &__mobile {
+    align-items: flex-start;
+    gap: 10px;
+    font-weight: 400;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.8);
+  }
+}

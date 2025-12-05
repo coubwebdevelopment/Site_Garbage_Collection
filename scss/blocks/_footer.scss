@@ -1,0 +1,144 @@
+.footer {
+  padding: 40px 0 0 0;
+  background: #1d2939;
+
+  // .footer__columns
+  &__columns {
+    flex-wrap: wrap;
+    gap: 40px;
+    padding-bottom: 40px;
+  }
+  // .footer__info
+  &__info {
+    flex: 1 1 270px;
+  }
+  // .footer__logo
+  &__logo {
+    display: inline-block;
+    max-width: 205px;
+    margin-bottom: 20px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: var(--white);
+
+    @media (max-width: 480px) {
+      font-size: 14px;
+    }
+    & img {
+      max-width: 85px;
+      margin-bottom: 10px;
+    }
+  }
+  // .footer__contacts
+  &__contacts {
+    font-weight: 400;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.8);
+  }
+  // .footer__company
+  &__company {
+    justify-items: center;
+    margin-bottom: 20px;
+  }
+  // .footer__text
+  &__text {
+    margin-left: 10px;
+    max-width: 240px;
+  }
+  // .footer__address
+  &__address {
+    justify-items: center;
+    margin-bottom: 20px;
+  }
+  // .footer__nav
+  &__nav {
+  }
+  // .footer__title
+  &__title {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 143%;
+    color: var(--gray);
+    margin-bottom: 10px;
+  }
+  // .footer__list
+  &__list {
+  }
+  // .footer__item
+  &__item {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    color: var(--white);
+    margin-bottom: 10px;
+  }
+  // .footer__link
+  &__link {
+  }
+  // .footer__bottom
+  &__bottom {
+    background: #101828;
+    padding: 40px 0;
+
+    @media (max-width: 480px) {
+      padding: 20px 0;
+    }
+  }
+
+  &__bottom--content {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+  }
+
+  &__bottom--links {
+    gap: 60px;
+
+    @media (max-width: 768px) {
+      order: 2;
+    }
+  }
+
+  &__bottom--contacts {
+    gap: 20px;
+
+    @media (max-width: 768px) {
+      order: 1;
+    }
+  }
+  // .footer__copyright
+  &__copyright {
+    font-weight: 400;
+    font-size: 14px;
+    color: var(--gray);
+
+    @media (max-width: 768px) {
+      order: 3;
+    }
+  }
+  // .footer__policy
+  // .footer__sitemap
+  &__policy,
+  &__sitemap {
+    font-weight: 400;
+    font-size: 14px;
+    text-decoration: underline;
+    text-decoration-skip-ink: none;
+    color: var(--gray);
+  }
+  // .footer__tel
+  // .footer__email
+  &__tel,
+  &__email {
+    gap: 10px;
+    align-items: center;
+    font-weight: 400;
+    font-size: 14px;
+    color: var(--white);
+
+    & img {
+      max-width: 18px;
+    }
+  }
+}

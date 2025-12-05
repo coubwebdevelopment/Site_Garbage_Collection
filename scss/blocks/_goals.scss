@@ -1,0 +1,250 @@
+.goals {
+  position: relative;
+  background-color: var(--white);
+  padding: 40px 0 100px 0;
+
+  &:before,
+  &:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 125px;
+    height: 125px;
+
+    @media (max-width: 480px) {
+      width: 75px;
+      height: 75px;
+    }
+  }
+
+  &:before {
+    left: 0;
+    background: radial-gradient(
+      circle at top right,
+      transparent 125px,
+      var(--blue-background) 125px
+    );
+
+    @media (max-width: 480px) {
+      background: radial-gradient(
+        circle at top right,
+        // Добавлено!
+        transparent 75px,
+        var(--blue-background) 75px
+      );
+    }
+  }
+
+  &:after {
+    right: 0;
+    background: radial-gradient(
+      circle at top left,
+      transparent 125px,
+      var(--blue-background) 125px
+    );
+
+    @media (max-width: 480px) {
+      background: radial-gradient(
+        circle at top left,
+        // Добавлено!
+        transparent 75px,
+        var(--blue-background) 75px
+      );
+    }
+  }
+
+  // .goals__header
+  &__header {
+    align-items: center;
+    margin-bottom: 10px;
+    position: relative;
+    z-index: 1;
+  }
+
+  // .goals__title
+  &__title {
+    font-family: var(--font-family);
+    font-size: 18px;
+    line-height: 110%;
+
+    & span {
+      font-weight: 800;
+      color: var(--blue-1);
+    }
+
+    @media (max-width: 480px) {
+      font-size: 16px;
+    }
+  }
+
+  &__title--1 {
+    margin-bottom: 20px;
+  }
+
+  // .goals__logo
+  &__logo {
+    margin-right: 20px;
+  }
+
+  // .goals__h2
+  &__h2 {
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 110%;
+    text-align: center;
+    color: var(--blue-1);
+    margin-bottom: 40px;
+
+    @media (max-width: 480px) {
+      font-size: 26px;
+    }
+  }
+  // .goals__content
+  &__content {
+    @media (max-width: 1030px) {
+      flex-direction: column;
+      gap: 50px;
+    }
+  }
+  // .goals__left
+  &__left {
+    position: relative;
+    flex: 1 1 50%;
+    background: var(--blue-background);
+    border-radius: 60px 0 0 60px;
+    padding: 40px;
+
+    &:after {
+      content: '';
+      position: absolute;
+      background-image: url(../../images/05-goals/icon-check-grey.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 250px;
+      height: 80%;
+      right: 0px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+    @media (max-width: 1030px) {
+      margin: 0 auto;
+      border-radius: 60px;
+    }
+  }
+
+  &__left--700 {
+    flex: 1 1 700px;
+    height: 350px;
+
+    @media (max-width: 1030px) {
+      flex: 1 1 100%;
+    }
+  }
+  // .goals__text
+  &__text {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 110%;
+    color: var(--gray);
+    margin-bottom: 20px;
+
+    & span {
+      display: inline-block;
+      font-weight: 600;
+      color: var(--blue-1);
+    }
+
+    @media (max-width: 480px) {
+      font-size: 14px;
+    }
+  }
+
+  // .goals__text--white
+  &__text--white {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 140%;
+    text-align: center;
+    color: var(--white);
+    padding: 20px;
+    background: rgba(111, 165, 233, 0.9);
+    border-radius: 40px;
+
+    @media (max-width: 480px) {
+      font-size: 16px;
+    }
+  }
+
+  &__text--title {
+    max-width: 530px;
+  }
+  // .goals__list
+  &__list {
+  }
+
+  &__list--1 {
+    max-width: 500px;
+  }
+
+  &__list--2 {
+    max-width: 340px;
+    position: relative;
+    z-index: 1;
+  }
+  // .goals__item
+  &__item {
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--gray);
+    & span {
+      font-weight: 600;
+      color: var(--black);
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+
+    @media (max-width: 480px) {
+      font-size: 14px;
+    }
+  }
+  // .goals__right
+  &__right {
+    position: relative;
+    flex: 1 1 50%;
+    padding: 35px 20px;
+
+    @media (max-width: 1030px) {
+      margin: 50px auto;
+    }
+  }
+
+  &__right--500 {
+    flex: 1 1 500px;
+  }
+
+  &__right--img {
+    position: absolute;
+    top: -25px;
+    left: -25px;
+    right: 0;
+    z-index: 0;
+
+    & img {
+      width: 445px;
+    }
+
+    @media (max-width: 1030px) {
+      left: 0;
+    }
+  }
+
+  // .goals__footer
+  &__footer {
+    margin-top: 50px;
+  }
+}

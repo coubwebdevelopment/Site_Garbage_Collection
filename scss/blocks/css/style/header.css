@@ -1,0 +1,75 @@
+.header__menu {
+  padding: 25px 0;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.header__links {
+  position: relative;
+  gap: 40px;
+  background: var(--white);
+  border: 10px solid var(--blue-background);
+  border-radius: 40px;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: -30px;
+  padding: 15px 0;
+  max-width: 850px;
+}
+@media (max-width: 1170px) {
+  .header__links {
+    display: none;
+  }
+}
+
+.header__links::before {
+  position: absolute;
+  content: "";
+  background-image: url(../../images/01-hero/left-arc-menu.svg);
+  width: 20px;
+  height: 30px;
+  left: 0;
+  bottom: 0;
+}
+
+.header__contacts {
+  gap: 20px;
+}
+@media (max-width: 1170px) {
+  .header__contacts {
+    background-color: var(--blue-background);
+  }
+}
+
+.header__phone,
+.header__email {
+  gap: 10px;
+}
+
+.header__phone img {
+  width: 18px;
+}
+
+.header__email img {
+  width: 18px;
+}
+
+.header__messengers {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 5px;
+}
+@media (max-width: 1200px) {
+  .header__messengers {
+    display: none;
+  }
+}

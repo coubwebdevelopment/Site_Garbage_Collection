@@ -1,0 +1,453 @@
+.how-we-work {
+  padding: 40px 0;
+  // .how-we-work__steps
+  &__steps {
+  }
+  // .how-we-work__h1
+  &__h1 {
+    max-width: 800px;
+    font-weight: 800;
+    line-height: 110%;
+    text-align: center;
+    color: var(--blue-1);
+    margin: 0 auto 40px auto;
+
+    @media (max-width: 480px) {
+      font-size: 26px;
+    }
+  }
+  // .how-we-work__text--blue
+  &__text--blue {
+    max-width: 620px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 40px;
+    margin-bottom: 40px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 140%;
+    text-align: center;
+    color: var(--gray);
+    background: var(--blue-background);
+
+    @media (max-width: 480px) {
+      font-size: 14px;
+    }
+
+    & span {
+      font-weight: 600;
+    }
+  }
+  // .how-we-work__schema
+  &__schema {
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 80px;
+
+    @media (max-width: 768px) {
+      flex-wrap: wrap;
+
+      gap: 20px;
+    }
+
+    &::after {
+      position: absolute;
+      content: '';
+      background-image: url(../../images/how_we_work/line-bottom.svg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center center;
+      width: 90%;
+      height: 65px;
+      bottom: 0;
+      z-index: -1;
+
+      @media (max-width: 768px) {
+        display: none;
+      }
+    }
+  }
+  // .how-we-work__schema--left
+  &__schema--left {
+    position: relative;
+    flex-direction: column;
+    gap: 80px;
+
+    @media (max-width: 768px) {
+      justify-content: space-around;
+      gap: 20px;
+      flex: 1 1 100%;
+    }
+
+    &::before {
+      @media (max-width: 768px) {
+        position: absolute;
+        content: '';
+        background-image: url(../../images/how_we_work/arrow-mobile-steps-2.svg);
+        background-position: center left;
+        background-size: 95%;
+        background-repeat: no-repeat;
+        width: 60%;
+        height: 90%;
+        left: 55%;
+        transform: translateX(-50%);
+        z-index: -1;
+        bottom: -50px;
+      }
+    }
+
+    &::after {
+      position: absolute;
+      content: '';
+      background-image: url(../../images/how_we_work/arrow-left.svg);
+      background-position: center left;
+      background-size: cover;
+      background-repeat: no-repeat;
+      width: 65px;
+      height: 90%;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: -1;
+
+      @media (max-width: 768px) {
+        background-image: url(../../images/how_we_work/arrow-mobile-steps-1.svg);
+        background-position: center left;
+        background-size: 90%;
+        background-repeat: no-repeat;
+        width: 65%;
+        height: 90%;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: -1;
+        top: -80px;
+      }
+    }
+  }
+  // .how-we-work__step
+  &__step {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background: var(--blue-background);
+
+    @media (max-width: 768px) {
+      width: 160px;
+      height: 160px;
+    }
+
+    &--content {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+    }
+
+    & img {
+      width: 80px;
+      margin: 0 auto;
+      margin-bottom: 10px;
+
+      @media (max-width: 768px) {
+        width: 60px;
+      }
+    }
+
+    & p {
+      font-weight: 600;
+      font-size: 16px;
+      color: var(--black);
+
+      @media (max-width: 768px) {
+        font-size: 14px;
+      }
+    }
+  }
+
+  // .how-we-work__step--2
+  &__step--2 {
+    position: relative;
+
+    @media (max-width: 768px) {
+      left: 40px;
+      align-self: flex-end;
+      left: 0;
+      margin-left: auto;
+    }
+
+    &::after {
+      position: absolute;
+      content: '';
+      background-image: url(../../images/how_we_work/arrow-how-we-work.svg);
+      background-size: cover;
+      background-position: center center;
+      background-repeat: no-repeat;
+      width: 25px;
+      height: 25px;
+      left: 63px;
+      top: -20px;
+
+      @media (max-width: 768px) {
+        display: none;
+      }
+    }
+  }
+
+  // .how-we-work__step--3
+  &__step--3 {
+    position: relative;
+
+    &::after {
+      position: absolute;
+      content: '';
+      background-image: url(../../images/how_we_work/arrow-how-we-work.svg);
+      background-size: cover;
+      background-position: center center;
+      background-repeat: no-repeat;
+      width: 25px;
+      height: 25px;
+      left: 75px;
+      top: -18px;
+      rotate: -30deg;
+
+      @media (max-width: 768px) {
+        left: 55px;
+        display: none;
+      }
+    }
+  }
+
+  // .how-we-work__step--4
+  &__step--4 {
+    position: relative;
+
+    &::after {
+      position: absolute;
+      content: '';
+      background-image: url(../../images/how_we_work/arrow-how-we-work.svg);
+      background-size: cover;
+      background-position: center center;
+      background-repeat: no-repeat;
+      width: 25px;
+      height: 25px;
+      left: 0px;
+      bottom: 20px;
+      rotate: 0deg;
+      @media (max-width: 768px) {
+        left: 15px;
+        bottom: -5px;
+        display: none;
+      }
+    }
+  }
+
+  // .how-we-work__step--5
+  &__step--5 {
+    position: relative;
+
+    @media (max-width: 768px) {
+      left: 40px;
+      align-self: flex-end;
+      left: 0;
+      margin-left: auto;
+    }
+
+    &::after {
+      position: absolute;
+      content: '';
+      background-image: url(../../images/how_we_work/arrow-how-we-work.svg);
+      background-size: cover;
+      background-position: center center;
+      background-repeat: no-repeat;
+      width: 25px;
+      height: 25px;
+      right: 75px;
+      bottom: -25px;
+      rotate: 65deg;
+
+      @media (max-width: 768px) {
+        display: none;
+      }
+    }
+  }
+
+  // .how-we-work__step--6
+  &__step--6 {
+    position: relative;
+
+    &::after {
+      position: absolute;
+      content: '';
+      background-image: url(../../images/how_we_work/arrow-how-we-work.svg);
+      background-size: cover;
+      background-position: center center;
+      background-repeat: no-repeat;
+      width: 25px;
+      height: 25px;
+      right: 65px;
+      bottom: -25px;
+      rotate: 65deg;
+
+      @media (max-width: 768px) {
+        right: 45px;
+        display: none;
+      }
+    }
+  }
+  // .how-we-work__schema--center
+  &__schema--center {
+  }
+  // .how-we-work__schema--right
+  &__schema--right {
+    position: relative;
+    flex-direction: column;
+    gap: 80px;
+
+    @media (max-width: 768px) {
+      justify-content: space-around;
+      gap: 20px;
+      flex: 1 1 100%;
+    }
+
+    &::before {
+      @media (max-width: 768px) {
+        position: absolute;
+        content: '';
+        background-image: url(../../images/how_we_work/arrow-mobile-steps-2.svg);
+        background-position: center left;
+        background-size: 95%;
+        background-repeat: no-repeat;
+        width: 60%;
+        height: 90%;
+        left: 55%;
+        transform: translateX(-50%);
+        z-index: -1;
+        bottom: -50px;
+      }
+    }
+
+    &::after {
+      position: absolute;
+      content: '';
+      background-image: url(../../images/how_we_work/arrow-right.svg);
+      background-position: center left;
+      background-size: cover;
+      background-repeat: no-repeat;
+      width: 65px;
+      height: 90%;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: -1;
+
+      @media (max-width: 768px) {
+        background-image: url(../../images/how_we_work/arrow-mobile-steps-1.svg);
+        background-position: center left;
+        background-size: 90%;
+        background-repeat: no-repeat;
+        width: 65%;
+        height: 90%;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: -1;
+        top: -80px;
+      }
+    }
+  }
+  // .how-we-work__benefits
+  &__benefits {
+  }
+  // .how-we-work__subtitle
+  &__subtitle {
+    max-width: 980px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+    font-weight: 400;
+    font-size: 24px;
+    text-align: center;
+    color: var(--gray);
+
+    @media (max-width: 480px) {
+      font-size: 16px;
+    }
+
+    & span {
+      font-weight: 600;
+      color: var(--blue-1);
+    }
+  }
+  // .how-we-work__cards
+  &__cards {
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-bottom: 80px;
+  }
+  // .how-we-work__card
+  &__card {
+    flex: 1 1 calc(50% - 20px);
+    background: var(--blue-background);
+    border-radius: 8px 8px 8px 8px;
+
+    @media (max-width: 768px) {
+      border-radius: 0px 0px 8px 8px;
+      flex-direction: column;
+      flex: 1 1 100%;
+    }
+  }
+  // .how-we-work__num
+  &__num {
+    position: relative;
+    padding: 20px 20px 20px 20px;
+    font-weight: 800;
+    font-size: 60px;
+    text-align: center;
+    color: var(--white);
+    background: rgba(111, 165, 233, 0.9);
+    border-radius: 8px 0 0 8px;
+
+    @media (max-width: 768px) {
+      padding: 20px 10px;
+      font-size: 30px;
+      border-radius: 8px 8px 8px 8px;
+    }
+
+    & p {
+      position: relative;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+  // .how-we-work__content
+  &__content {
+    padding: 50px 20px;
+    background: var(--blue-background);
+    border-radius: 0px 8px 8px 0px;
+
+    @media (max-width: 768px) {
+      padding: 20px 10px;
+      border-radius: 0px 0px 8px 8px;
+    }
+  }
+  // .how-we-work__title
+  &__title {
+    font-weight: 600;
+    font-size: 20px;
+    color: var(--black);
+    margin-bottom: 20px;
+
+    @media (max-width: 480px) {
+      font-size: 16px;
+    }
+  }
+  // .how-we-work__text
+  &__text {
+    font-weight: 400;
+    font-size: 18px;
+    color: var(--gray);
+
+    @media (max-width: 480px) {
+      font-size: 14px;
+    }
+  }
+}
